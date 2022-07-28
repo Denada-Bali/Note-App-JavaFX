@@ -9,7 +9,7 @@ fontawesomefx-8.2.jar
 
 I used scene builder to build the interfaces and CSS to design the buttons, texts and panels. 
 
-# Videos
+## Videos
 
 https://user-images.githubusercontent.com/86987951/181518839-dc6a1789-439d-4e7a-bf1c-9f435bfc11af.mp4
 
