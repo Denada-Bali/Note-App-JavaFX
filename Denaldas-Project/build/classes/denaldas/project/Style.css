@@ -1,0 +1,134 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 15, 2022, 10:24:40 PM
+    Author     : Denalda
+*/
+.parent {
+    -fx-background-color: transparent;
+}
+.pane{
+    -fx-background-color: white;
+}
+.gray-pane{
+   -fx-background-color: #f5f5f5;
+}
+
+.red-pane{
+     -fx-background-color: #AA0000; 
+}
+.dark-red-pane{
+     -fx-background-color: #5e1918; 
+}
+
+.red-pane-border{
+     -fx-background-color: #AA0000; 
+    -fx-border-color: white;
+    -fx-border-width: 2px 0denapx 2px 2px;
+}
+
+.btn-white{
+    -fx-background-color: white; 
+    fx-background-radius: 5px;
+
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: #AA0000; 
+}
+
+.btn-exit-border{
+    -fx-background-color: transparent; 
+}
+
+.btn-exit-border:hover{
+    -fx-background-color: #FF0000; 
+    -fx-background-radius: 1; 
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;  
+    -fx-icon-color: black;
+}
+
+.btn-min-restor-border{
+    -fx-background-color: transparent; 
+}
+
+.btn-min-restor-border:hover{
+    -fx-background-color: #cc0000; 
+    -fx-background-radius: 1; 
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;  
+}
+
+.btn-white-border{
+    -fx-background-color: transparent; 
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke; 
+    
+}
+
+.tf-box{
+    -fx-background-color: #F5F5F5; 
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: #AA0000; 
+}
+.tf-border-box{
+    -fx-background-color: white; 
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-text-fill: #AA0000; 
+}
+.tf{
+     -fx-background-color: transparent; 
+     -fx-text-fill: #AA0000; 
+}
+.red-btn{
+     -fx-background-color:  #AA0000;
+     -fx-border-color: #AA0000;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: #ffffff; 
+}
+.label-white-border{
+    -fx-background-color: transparent; 
+    -fx-background-radius: 5px;
+    -fx-border-color: white;
+    -fx-border-radius: 1px;
+    -fx-border-width: 1px;
+}
+.label-dark-blue-border{
+    -fx-background-color: transparent; 
+    -fx-background-radius: 5px;
+    -fx-border-color: #002244;
+    -fx-border-radius: 1px;
+    -fx-border-width: 1px;
+}
+.label-red-border{
+    -fx-background-color: transparent; 
+    -fx-background-radius: 5px;
+    -fx-border-color: #AA0000;
+    -fx-border-radius: 1px;
+    -fx-border-width: 1px;
+}
+.pane-gray{
+    -fx-background-color: #e5e5e5; 
+}
+.border-pane{
+    -fx-background-color: #ffffff; 
+}
+
+.menu-bar:hover{
+    -fx-border-color: #AA0000;
+    -fx-border-width: 0px 0px 3px 0px;
+    
+}
+
+.text-Area{
+    
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="denaldas.project.MainBorderController">
+   <children>
+      <StackPane fx:id="stackPn" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <BorderPane fx:id="borderPane" prefHeight="200.0" prefWidth="200.0">
+               <top>
+                  <HBox prefHeight="42.0" prefWidth="200.0" spacing="10.0" styleClass="border-pane" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label prefHeight="46.0" prefWidth="97.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="BARS" />
+                           </graphic>
+                        </Label>
+                        <JFXButton fx:id="d" onAction="#loadDashboardButton" prefHeight="42.0" prefWidth="97.0" styleClass="menu-bar" text="Dashboard ">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="DASHBOARD" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="p" onAction="#loadAddNoteButton" prefHeight="42.0" prefWidth="97.0" styleClass="menu-bar" text="Add Note">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="PLUS" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="r" onAction="#loadScheduleButton" prefHeight="42.0" prefWidth="97.0" styleClass="menu-bar" text="Schedule">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="CALENDAR" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="s" onAction="#loadSettingsButton" prefHeight="42.0" prefWidth="97.0" styleClass="menu-bar" text="Settings">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="COGS" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children>
+      </StackPane>
+      <HBox prefHeight="30.0" prefWidth="900.0" styleClass="red-pane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </HBox>
+      <Button layoutX="857.0" mnemonicParsing="false" onAction="#exit" prefHeight="30.0" prefWidth="44.0" styleClass="btn-exit-border" textFill="WHITE" AnchorPane.bottomAnchor="470.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fx:id="close1" fill="WHITE" glyphName="CLOSE" onMouseClicked="#exit" />
+         </graphic>
+      </Button>
+      <Button fx:id="minimize_btn1" layoutX="770.0" mnemonicParsing="false" onAction="#minimize_clicked" prefHeight="30.0" prefWidth="44.0" styleClass="btn-min-restor-border" AnchorPane.bottomAnchor="470.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="MINUS" />
+         </graphic>
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="maximized_btn1" layoutX="814.0" mnemonicParsing="false" onAction="#maximized_clicked" prefHeight="30.0" prefWidth="44.0" styleClass="btn-min-restor-border" AnchorPane.bottomAnchor="470.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="SQUARE" />
+         </graphic>
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="denaldas.project.AddNoteController">
+   <children>
+      <JFXButton fx:id="saveNoteBTN" layoutX="694.0" layoutY="356.0" onAction="#handleSaveNote_btn" prefHeight="30.0" prefWidth="179.0" text="Save Note" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="694.0" AnchorPane.rightAnchor="27.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="SAVE" />
+         </graphic>
+      </JFXButton>
+      <Label alignment="CENTER_RIGHT" layoutX="49.0" layoutY="42.0" prefHeight="18.0" prefWidth="40.0" text="Title:">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="title" alignment="TOP_LEFT" layoutX="105.0" layoutY="38.0" prefHeight="27.0" prefWidth="222.0" promptText="e.g.  Traditional Albanian Food" styleClass="tf">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </TextField>
+      <Label alignment="TOP_CENTER" layoutX="27.0" layoutY="96.0" text="Description:">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="description" layoutX="105.0" layoutY="104.0" prefHeight="335.0" prefWidth="702.0" styleClass="text-Area" viewOrder="3.0" />
+   </children>
+</AnchorPane>
